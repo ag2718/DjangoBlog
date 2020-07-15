@@ -1,0 +1,76 @@
+body {
+    background: rgb(240, 255, 240);
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: rgb(0, 150, 0);
+}
+
+.header {
+    background: rgb(108, 172, 151); width: 100%; margin: 0 auto;
+    color:white;
+}
+
+.btn-primary {
+    background: rgb(108, 172, 151) !important;
+    background: rgb(108, 172, 151) !important;
+    border-color: rgb(108, 172, 151) !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(128, 192, 171) !important;
+    border-color: rgb(128, 192, 171) !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    background-color: rgb(88, 152, 131) !important;
+    border-color: rgb(88, 152, 131) !important;
+}
+
+a.light-link {
+    color: white !important;
+}
+
+a.light-link:hover {
+    color: rgb(186, 236, 186) !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-head {
+    background: rgb(108, 172, 151);
+    color: white;
+    padding: 30px;
+    border: solid black;
+    border-width: 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.post-content {
+    padding: 30px;
+    background-color: white;
+    margin-top: -12px;
+    border: solid black;
+    border-width: 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.scroll {
+    height: calc(100vh - 110px);
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+}
