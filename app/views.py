@@ -19,6 +19,7 @@ class ExampleModelListView(ListView):
     model = ExampleModel
     template_name = 'templates/home.html'
     ordering = ["-when_posted"]
+    paginate_by = 1
 
 
 class ExampleModelDetailView(DetailView):

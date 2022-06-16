@@ -4,8 +4,7 @@ from . import views
 from .views import ExampleModelListView, ExampleModelDetailView, ExampleModelCreateView
 
 urlpatterns = [
-    path('', views.main, ''),
-    path('home', ExampleModelListView.as_view(), name='home'),
+    path('', ExampleModelListView.as_view(paginate_by=1), name='home'),
     path('posts/<int:pk>/', ExampleModelDetailView.as_view(), name='view-post'),
     path('posts/new/', ExampleModelCreateView.as_view(), name='new-post'),
     path('register/', views.register, name='register'),
